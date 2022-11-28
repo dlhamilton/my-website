@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("sjZI_dTlFCVI_oVEq");
+   })();
+</script>
+
     <title>Daniel</title>
 </head>
 
@@ -69,7 +79,7 @@
                 <h5 class="uppercase text-center">Let's work together</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
                             required />
@@ -149,6 +159,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
@@ -156,6 +167,8 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/372da758e4.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
